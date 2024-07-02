@@ -6,6 +6,7 @@ public class CustomExceptions {
         public ResourceNotFoundException(String message) {
             super(message);
         }
+
     }
 
     public static class BadRequestException extends RuntimeException {
