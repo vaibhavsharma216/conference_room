@@ -1,6 +1,6 @@
-package com.conference.spring_boot_conference.Service;
+package com.example.ConferenceRoomBookingSystem.Service;
 
-import com.conference.spring_boot_conference.Entity.MeetingRoom;
+import com.example.ConferenceRoomBookingSystem.Entity.MeetingRoom;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

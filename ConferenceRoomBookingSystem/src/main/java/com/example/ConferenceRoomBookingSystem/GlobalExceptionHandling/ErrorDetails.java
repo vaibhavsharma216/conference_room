@@ -1,4 +1,4 @@
-package com.conference.spring_boot_conference.GlobalExceptionHandling;
+package com.example.ConferenceRoomBookingSystem.GlobalExceptionHandling;
 
 import java.util.Date;
 

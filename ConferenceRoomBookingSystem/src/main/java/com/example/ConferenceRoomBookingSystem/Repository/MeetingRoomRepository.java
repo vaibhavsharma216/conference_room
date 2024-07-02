@@ -1,7 +1,7 @@
-package com.conference.spring_boot_conference.Repository;
+package com.example.ConferenceRoomBookingSystem.Repository;
 
-import com.conference.spring_boot_conference.Entity.MeetingRoom;
-import com.conference.spring_boot_conference.Entity.MeetingRoomStatus;
+import com.example.ConferenceRoomBookingSystem.Entity.MeetingRoom;
+import com.example.ConferenceRoomBookingSystem.Entity.MeetingRoomStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;

@@ -1,4 +1,4 @@
-package com.conference.spring_boot_conference.GlobalExceptionHandling;
+package com.example.ConferenceRoomBookingSystem.GlobalExceptionHandling;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

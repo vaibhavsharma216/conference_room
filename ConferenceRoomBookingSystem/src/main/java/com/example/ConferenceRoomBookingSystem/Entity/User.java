@@ -1,7 +1,5 @@
-package com.conference.spring_boot_conference.Entity;
+package com.example.ConferenceRoomBookingSystem.Entity;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -21,7 +19,6 @@ public class User {
 
     @Column(name = "email",unique = true)
     private String email;
-
 
     @Column(name = "password")
     private String password;
@@ -59,4 +56,3 @@ public class User {
         this.email = email;
     }
 }
-

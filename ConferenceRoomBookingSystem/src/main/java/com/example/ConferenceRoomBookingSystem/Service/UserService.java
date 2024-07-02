@@ -1,6 +1,6 @@
-package com.conference.spring_boot_conference.Service;
+package com.example.ConferenceRoomBookingSystem.Service;
 
-import com.conference.spring_boot_conference.Entity.User;
+import com.example.ConferenceRoomBookingSystem.Entity.User;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
@@ -10,3 +10,4 @@ public interface UserService {
     User login(String email, String password);
     User deactivateUser(String email);
 }
+

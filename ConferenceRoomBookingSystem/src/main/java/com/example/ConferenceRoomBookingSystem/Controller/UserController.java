@@ -1,8 +1,8 @@
-package com.conference.spring_boot_conference.Controller;
+package com.example.ConferenceRoomBookingSystem.Controller;
 
-import com.conference.spring_boot_conference.Entity.User;
-import com.conference.spring_boot_conference.Repository.UserRepository;
-import com.conference.spring_boot_conference.Service.UserService;
+import com.example.ConferenceRoomBookingSystem.Entity.User;
+import com.example.ConferenceRoomBookingSystem.Repository.UserRepository;
+import com.example.ConferenceRoomBookingSystem.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

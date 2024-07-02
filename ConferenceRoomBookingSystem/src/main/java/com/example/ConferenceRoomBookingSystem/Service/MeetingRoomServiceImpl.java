@@ -1,9 +1,9 @@
-package com.conference.spring_boot_conference.Service;
+package com.example.ConferenceRoomBookingSystem.Service;
 
-import com.conference.spring_boot_conference.Entity.MeetingRoom;
-import com.conference.spring_boot_conference.Entity.MeetingRoomStatus;
-import com.conference.spring_boot_conference.GlobalExceptionHandling.CustomExceptions;
-import com.conference.spring_boot_conference.Repository.MeetingRoomRepository;
+import com.example.ConferenceRoomBookingSystem.Entity.MeetingRoom;
+import com.example.ConferenceRoomBookingSystem.Entity.MeetingRoomStatus;
+import com.example.ConferenceRoomBookingSystem.GlobalExceptionHandling.CustomExceptions;
+import com.example.ConferenceRoomBookingSystem.Repository.MeetingRoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-    public class MeetingRoomServiceImpl implements MeetingRoomService {
+public class MeetingRoomServiceImpl implements MeetingRoomService {
 
     @Autowired
     private MeetingRoomRepository meetingRoomRepository;
@@ -70,7 +70,7 @@ import java.util.stream.Collectors;
         MeetingRoom request = null;
         Optional<MeetingRoom> requestOptional = meetingRoomRepository.findById(Id);
         if (requestOptional.isPresent()) {
-             request = requestOptional.get();
+            request = requestOptional.get();
             request.setStatus(MeetingRoomStatus.APPROVED);
             return meetingRoomRepository.save(request);
         }
@@ -82,12 +82,10 @@ import java.util.stream.Collectors;
         Optional<MeetingRoom> requestOptional = meetingRoomRepository.findById(Id);
         MeetingRoom request = null;
         if (requestOptional.isPresent()) {
-             request = requestOptional.get();
+            request = requestOptional.get();
             request.setStatus(MeetingRoomStatus.DENIED);
             return meetingRoomRepository.save(request);
         }
         throw new CustomExceptions.ResourceNotFoundException("Booking request not found with ID: " + Id);
     }
 }
-
-
